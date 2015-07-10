@@ -23,9 +23,12 @@
     [list addObject:dic1];
     [list addObject:dic2];
     
- [EBTSelectBankCardView showSelectBankCardInView:self.view DataSource:list completeHandler:^(NSDictionary *resultDic) {
+ [EBTSelectBankCardView showSelectBankCardInView:self.view DataSource:list completeHandler:^(NSDictionary *resultDic) 
+ {
+ 
      NSLog(@"resultDic = %@",resultDic);
      count = 0;
+     
  }];
    
     if (count%2==0) {
